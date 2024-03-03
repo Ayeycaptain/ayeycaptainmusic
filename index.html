@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audio Player</title>
+<style>
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  audio {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .play-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div>
+    <img src="download (3).png" alt="Gambar 1">
+    <br>
+    <audio controls id="audio1">
+      <source src="X2Download.app - Cool Audio Maker Intros PT.2 (128 kbps)_1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br>
+    <button class="play-button" onclick="playAudio('audio1')">Play Song make coffe</button>
+  </div>
+  
+  <div>
+    <img src="download (3).png" alt="Gambar 2">
+    <br>
+    <audio controls id="audio2">
+      <source src="eyekeem gasolina.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br>
+    <button class="play-button" onclick="playAudio('audio2')">Play Song eyeekem gasolina</button>
+  </div>
+  
+  <div>
+    <img src="download (3).png" alt="Gambar 3">
+    <br>
+    <audio controls id="audio3">
+      <source src="zoonjbh ayeycaptain_1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br>
+    <button class="play-button" onclick="playAudio('audio3')">Play Song the muffin man</button>
+  </div>
+  
+  <div>
+    <img src="download (3).png" alt="Gambar 4">
+    <br>
+    <audio controls id="audio4">
+      <source src="freddy ayeycaptain.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br>
+    <button class="play-button" onclick="playAudio('audio4')">Play Song freddy ayeycaptain</button>
+  </div>
+  
+  <div>
+    <img src="download (3).png" alt="Gambar 5">
+    <br>
+    <audio controls id="audio5">
+      <source src="gg.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br>
+    <button class="play-button" onclick="playAudio('audio5')">Play Song on my way</button>
+  </div>
+</div>
+
+<script>
+  function playAudio(id) {
+    var audio = document.getElementById(id);
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  }
+</script>
+
+</body>
+</html>
+©copyright ayeycaptainmusic
